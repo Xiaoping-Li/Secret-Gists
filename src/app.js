@@ -1,12 +1,12 @@
 require('dotenv').config();
 const bodyParser = require('body-parser');
 const express = require('express');
-const octokit = require('@octokit/rest');
+const Octokit = require('@octokit/rest');
 const nacl = require('tweetnacl');
 nacl.util = require('tweetnacl-util');
 
-const username = 'yourusername';  // TODO: your GitHub username here
-const github = new octokit({ debug: true });
+const username = 'leelali';  // TODO: your GitHub username here
+const github = new Octokit({ debug: true });
 const server = express();
 
 // Generate an access token: https://github.com/settings/tokens
